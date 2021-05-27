@@ -55,6 +55,11 @@ form button:hover {
   list-style: none;
 }
 
+.todo-input {
+  width: 30%;
+  max-width: 400px;
+}
+
 .todo {
   margin: 0.5rem;
   background: white;
