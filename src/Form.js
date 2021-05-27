@@ -17,16 +17,16 @@ const Form = (props) => {
   };
 
   return (
-    <form>
+    <form onSubmit={submitTodoHandler}>
       <input
         type="text"
         className="todo-input"
         onChange={inputTextHandler}
         value={props.inputText}
       />
-      <button className="todo-button" type="submit" onClick={submitTodoHandler}>
+      {/* <button className="todo-button" type="submit" onClick={submitTodoHandler}>
         <i className="fas fa-plus-square"></i>
-      </button>
+      </button> */}
       <div className="select">
         <select name="todos" className="filter-todo">
           <option value="all">All</option>
